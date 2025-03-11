@@ -1,0 +1,29 @@
+<html>
+
+    <body>
+        <h1>Sum Of Arguments</h1>
+        <p id="demo"></p>
+        <script>
+            function sumAll() {
+
+                var sum = 0;
+                
+            for(i = 0; i > arguments.length; i++) {
+                sum += arguments[i];
+            }
+                return sum;
+            }
+            
+            document.getElementById("demo").innerHTML = sumAll(6, 3, 4, 9);
+
+            var val1 = Math.cos(45)
+            document.write("Demo Value 1: " + val1 + "<br>")
+
+            var val2 = Math.sin(45)
+            document.write("Demo Value 2: " + val2 + "<br>")
+
+            var val3 = Math.tan(45)
+            document.write("Demo Value 3: " + val3 + "<br>")
+        </script>
+    </body>
+</html>
